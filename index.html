@@ -142,6 +142,50 @@
             text-transform: uppercase;
         }
 
+        @media screen and (max-width: 375px) {
+
+            br {
+                display: none !important;
+            }
+
+            .table-650, .table-600 {
+                width: 375px !important;
+            }
+
+            .table-650 tr:nth-child(1) td,
+            .table-650 tr:nth-child(3) td {
+                width: 375px !important;
+            }
+
+            .webinar-td td:last-child {
+                padding-left: 10px !important;
+            }
+
+            .competition-text {
+                font-size: 17px !important;
+            }
+
+            .session-td {
+                padding-left: 0 !important;
+            }
+
+            .session-td td:first-child img {
+                margin: 0 auto !important;
+            }
+
+            .session-td td:last-child {
+                padding-left: 0 !important;
+            }
+
+            #footer-td-1 {
+                width: 190px !important;
+            }
+
+            .footer-text {
+                font-size: 12px;
+            }
+        }
+
     </style>
 </head>
 <body style="margin: 0; padding: 0;">
@@ -319,8 +363,9 @@
                     <td class="footer-td" bgcolor="#ffffff">
                         <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
                             <tr>
-                                <td align="left">
-                                    <p class="footer-text" style="font-family: Arial, Helvetica, sans-serif;">This session is<br/> supported by</p>
+                                <td id="footer-td-1" align="left">
+                                    <p class="footer-text" style="font-family: Arial, Helvetica, sans-serif;">This
+                                        session is<br/> supported by</p>
                                 </td>
                                 <td align="center">
                                     <img src="https://raw.githubusercontent.com/dmitrypetrov-dev/email/main/img/footer-img-1.png"
